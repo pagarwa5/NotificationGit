@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: NEX7ZUQ
+Build-Jdk: 10.0.1
+Implementation-Title: notification
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.notification
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/notification
+Created-By: Maven Integration for Eclipse
+
