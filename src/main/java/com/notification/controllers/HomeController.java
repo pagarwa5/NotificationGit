@@ -15,16 +15,21 @@ import com.notification.services.UserManagementService;
 @RestController
 public class HomeController {
 	
-	 @Autowired
-	 private ClassB b;
+	
 	 
+	 int count=0;
 	
 	
 	@RequestMapping("/hello")
 	public String hello() {
+		
+		synchronized (HomeController.class) {
+			count++;
+		}
+		System.out.println(count);
 		//ClassB b  =  new ClassB();
-		b.test();
-		System.out.println(b);
+		
+		
 		/* User user = new User("user1");
 	       Set<Role> roles = new HashSet<Role>() {
 	    	   {
@@ -40,6 +45,6 @@ public class HomeController {
 	          
 	        }});*/
 
-		return "Hello!";
+		return "Number of requests are"+count;
 	}
 }
