@@ -15,5 +15,4 @@ public class NotificationTest {
 		String actualStr  =  "{id:course11}";
 		JSONAssert.assertNotEquals(expectedStr, actualStr, false);
 	}
-	
 }
